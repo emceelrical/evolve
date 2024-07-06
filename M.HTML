@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        Making a div horizontally
+        scrollable using CSS
+    </title>
+
+</head>
+ 
+<body>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <button type="button" onclick="submitForm()">Submit</button>
+  </forM>
+
+  <script>
+    function submitForm() {
+      const form = document.getElementById('myForm');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        // Perform validation and processing here
+      });
+  
+      form.submit();
+    }
+  </script>
+  </body>
+ 
+</html>
